@@ -151,33 +151,8 @@ Useful output files include:
 - `outputs/enhanced_project_report.md`
 - `outputs/application_project_summary.md`
 
-## Example Interpretation
-
-In this dataset, the pipeline identified three broad patient groups:
-
-- `improving-labs`
-- `higher-kidney-burden`
-- `lower-kidney-burden`
-
-The validation script showed that kidney-related features such as creatinine and urea nitrogen were among the strongest drivers of cluster separation.
-
 ## Limitations
 
 - this is a de-identified ICU-style dataset, so the trajectories are short-term inpatient patterns rather than long-term outpatient disease progression
 - the clustering is a simple first-pass unsupervised learning approach, not a definitive clinical subtype model
 - some diagnosis labels remain source-coded because of the structure of the local OMOP export
-
-## Why This Project Is Useful For Applications
-
-This project demonstrates:
-
-- OMOP data handling
-- longitudinal feature engineering
-- unsupervised learning
-- cluster validation
-- phenotype interpretation
-- reproducible research outputs
-
-A concise resume description could be:
-
-Built an OMOP-based longitudinal phenotyping pipeline that transformed repeated kidney-related laboratory measurements into trajectory features, unsupervised patient clusters, and clinically interpretable subgroup summaries.
